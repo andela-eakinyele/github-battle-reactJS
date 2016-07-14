@@ -4,7 +4,7 @@ import React from 'react';
 
 class ProfilePic extends React.Component {
   render() {
-    return <img src={this.props.imageUrl} style={{ height=100, width: 100 }} />
+    return <img src={this.props.imageUrl} style={{ height:100, width: 100 }} />
   }
 }
 
