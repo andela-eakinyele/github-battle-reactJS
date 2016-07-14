@@ -1,0 +1,15 @@
+{
+  "name": "reactjstutorial",
+  "version": "1.0.0",
+  "description": "A tutorial by tyler mcginnis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
