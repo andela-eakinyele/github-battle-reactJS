@@ -1,26 +1,27 @@
 'use strict';
 
-import React from 'react';
+import React, {Component} from 'react';
+import Link from './link';
 
-class ProfilePic extends React.Component {
+class ProfilePic extends Component {
   render() {
     return <img src={this.props.imageUrl} style={{ height:100, width: 100 }} />
   }
 }
 
-class ProfileLink extends React.Component {
+class ProfileLink extends Component {
   render() {
     return (
       <div>
-        <a href={'https://github.com/' + this.props.username}>
+        <Link href={'https://github.com/' + this.props.username}>
           {this.props.username}
-        </a>
+        </Link>
       </div>
     )
   }
 }
 
-class ProfileName extends React.Component {
+class ProfileName extends Component {
   render() {
     return (
       <div> {this.props.name} </div>
@@ -28,7 +29,7 @@ class ProfileName extends React.Component {
   }
 }
 
-class Avatar extends React.Component {
+class Avatar extends Component {
   render() {
     return (
       <div>
@@ -40,4 +41,4 @@ class Avatar extends React.Component {
   }
 }
 
-module.exports = Avatar;
+export default Avatar;
